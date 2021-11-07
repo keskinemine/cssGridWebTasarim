@@ -1,0 +1,420 @@
+* { 
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+    height: 1200px;
+    grid-template-rows: 300px 1fr 300px;
+}
+#header{
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 1.5fr 3fr 1.3fr;
+    background-color: white;
+    border: none;
+   
+}
+#footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1.5 1.5fr 0.5fr;
+    grid-template-rows: 3fr 0.5fr;
+    background-color: white;
+    grid-gap: 1.3rem;
+    border: none;
+    margin-top: 1.3rem;
+}
+#content{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 6fr 7fr ;
+    background-color:white;
+    border: none;
+}
+
+div{
+    background: lightgray;
+    border: thin solid black;
+}
+.kapsayici{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    padding-bottom: 1rem;
+}
+
+
+.copyRightBox{
+    grid-column: 1/span 4;
+}
+.sign{
+    background-color: rgb(193, 6, 6);
+    display: flex;
+    align-items: center;
+
+}
+.sign > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 10vw;
+    text-align: center;
+    
+   
+}
+.sign > ul li a{ 
+    color: white;
+    text-decoration: none;
+    padding-right: 0.4rem;
+}
+ .sign form{
+    margin-left: 44vw;
+    margin-right: 10vw;
+    border: solid 1px white;    
+    background-color: white;
+    outline: none;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 3rem;
+}
+input[type=text]{
+    border: none;
+    border-radius: 5rem;
+}
+ button[type=submit]{
+     background-color: rgb(193, 6, 6);
+     border: none;
+     width: 25px;
+     padding-left: 0.8rem;
+     z-index: 99;
+     color: white;
+     border-radius: 3rem;
+     margin-right:  0.3rem;;
+     padding: 0.1rem 0.3rem;  
+ }
+ .logo{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+ }
+ .yazi{
+     background-color: white;
+     border: none;
+ }
+ .yazi > h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+  
+    margin-left: 10vw;
+    align-items: center;
+ }
+ .yazi > h1 span{
+     font-size: 2rem;
+ }
+ .yazi > p{
+    font-family: 'Playfair Display', serif;
+   
+    margin-left: 10vw;
+ }
+ .social{
+     background-color: white;
+     border: none;
+ }
+ .social ul{
+    position: relative;
+    display: flex;
+    margin-right: 10vw;
+   
+ }
+ .social ul li{
+    position: relative;
+    list-style: none;
+  
+ }
+ .social ul li a{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 21, 21);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    color: white;
+    }
+ .social ul li a:hover{
+     background-color: rgb(255, 119, 8);
+ }
+ .mainav{
+        background-color: rgb(21, 21, 21);
+        margin-left: 10vw;
+        margin-right: 10vw;  
+        display: flex;
+        align-items: center; 
+        border-radius: 10px 10px 10px 10px;
+        border: none;
+        
+      
+}
+.mainav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    list-style: none;
+    border: none;
+}
+.mainav > ul li a { 
+    align-items: center;
+    color: white; 
+    text-decoration: none;
+    text-transform: uppercase;
+   
+    
+
+     }
+.mainav > ul > li a:nth-child(1){
+    margin-left: 3rem;
+}
+.mainav >  ul > li a:last-child{
+    margin-left: 3rem;
+}
+.mainav > ul li a:hover{
+    color: rgb(171, 0, 0);
+ }
+.intro{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: none;  
+    background-color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.introresim {
+    border-radius: 10px 10px 10px 10px;
+    margin: 0.6rem 1rem 0.6rem 0rem;
+    border: none;
+}
+.introbaslik{
+    background-color: white;
+    border: none;
+    margin: 0.4rem 1rem;
+   
+
+}
+.introbaslik h1{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem ;
+}
+.introbaslik > p{
+    font-family: 'Playfair Display', serif;
+    text-align: justify;
+   
+}
+.introbaslik a{
+    display: flex;
+    float: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(233, 8, 8);
+}
+.article{
+    display: grid;
+    background-color: rgb(238, 238, 238);
+    border: none;
+}
+.contentBox{
+    background-color: rgb(238, 238, 238);  
+    border: none;
+   
+}
+.contentBox h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7rem;
+    margin: 2rem 0;
+    text-align: start;
+}
+
+.kapsayici > div > img{
+    background-color: rgb(238, 238, 238); 
+    border: 1px solid lightgray;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+}
+.kapsayici > div > p{
+margin-bottom: 1rem;
+}
+.kapsayici > div p{
+    font-family: 'Noto Serif JP', serif;
+    color:rgb(143, 143, 143);
+    text-align: justify;
+}
+.kapsayici > div a{
+display: flex;
+float: right;
+text-decoration: none;
+color: rgb(233, 8, 8);
+margin-bottom: 0.7rem;
+margin-top: -0.5rem;
+}
+.service{
+    display: flex;
+    background-color: rgb(238, 238, 238); 
+    border: none;
+    margin-bottom: 1.8rem;
+
+}
+.servicetext{
+    background-color: rgb(238, 238, 238); 
+    border: none;
+    margin-left: 1rem;
+}
+.servicetext h4{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: gray;
+    font-family: 'Noto Serif JP', serif;
+}
+.service > img{
+    border-radius: 50%;
+}
+.quoteBox{
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 4rem;
+    border: none;
+}
+.quoteBox >p a{
+ margin: 1.3rem 0rem;
+}
+.quote{
+    display: flex;
+    flex-direction: row;
+  background-color: rgb(238, 238, 238);
+    align-items: center;
+    border:none;
+    font-family: 'Noto Serif JP', serif; ;
+}
+.quote i{
+    color: gray;
+   
+}
+.quote span{
+    font-weight: 100;
+}
+.quote h6{
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+#footer div:first-child{
+    margin-left: 10vw;
+    padding: 5.5rem 0rem;
+}
+#footer div:nth-child(2){
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+#footer div:nth-child(3){
+    margin-right: 10vw;
+}
+#footer div:last-child{
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+.footerBox{
+    background-color: white;
+    border: none;
+}
+.copyRightBox{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.copyRightBox span{
+    font-family:'Dancing Script', cursive;
+    font-size: 1.2rem ;
+}
+#footer div:first-child h4{
+   font-family: 'Architects Daughter', cursive;
+   font-size: 2rem;
+}
+#footer div:first-child a{
+    text-decoration: none;
+    color: rgb(249, 134, 11);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5rem;
+    font-weight: bolder; 
+}
+#footer div:first-child a:hover{
+    color: gray;
+}
+#footer div:nth-child(2) h4{
+    text-transform: uppercase;
+    font-family:serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+ }
+ #footer div:nth-child(2) ul{
+     list-style: none;
+     font-family: serif;
+ }
+ #footer div:nth-child(2) ul li{
+    border-bottom: 1.5px dotter gray;
+    font-size: 1.2rem;
+    padding: 0.5rem 0rem;
+ }
+ #footer div:nth-child(2) ul li a{
+text-decoration: none;
+color: black;     
+}
+#footer div:nth-child(2) a:hover{
+    color: rgb(249, 134, 11);
+}
+#footer div:nth-child(3) h4{
+    text-transform: uppercase;
+    font-family:serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+    
+ }
+ input[type=text], select, textarea{
+     width: 100%;
+     padding: 0.4rem;
+     border: 1px solid #ccc; 
+     border-radius: 4px; 
+     box-sizing: border-box;
+     margin-bottom: 0.3rem;
+     margin-top: 0.3rem;
+     resize: none;
+ }
+input[type=submit]{
+    display: block;
+    background-color: rgb(249, 134, 11);
+    border: none;
+    padding: 3px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
